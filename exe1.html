@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>exe1</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+<p id="test"></p>
+<script>
+	var cat={
+		"legs":4,
+		"name":"Tom",
+		"color":"pale blue",
+		"isHappy":false
+	};
+	var cat1={
+		"legs" :2,
+		"name":"Tom",
+		"color":"red",
+		"catHasGotJerry":true
+	};
+	if(cat1.catHasGotJerry==true){
+		cat.isHappy=true;
+
+	}
+	console.log()
+	console.log("our cat has "+cat.legs+"legs.");
+	document.write("our cat has "+cat1.legs+" legs.");
+	console.log("my name is "+cat1.name+" and if you ask i am happy i must say it is "+cat1.catHasGotJerry);
+	cat.meow=function(){
+		document.write("meow,my name is "+ this.name+"!")
+	};
+	cat.meow();
+	
+</script>	
+</body>
+</html>

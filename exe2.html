@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>exe2</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p id="test"></p>
+<script>
+	var cat={
+		"legs":4,
+		"name":"Tom",
+		"color":"pale blue",
+		"isHappy":false
+	};
+	var cat1={
+		"legs" :2,
+		"name":"Tom",
+		"color":"red",
+		"catHasGotJerry":true
+	};
+	if(cat1.catHasGotJerry==true){
+		cat.isHappy=true;
+
+	}
+	console.log()
+	console.log("our cat has "+cat.legs+"legs.");
+	document.write("our cat has "+cat1.legs+" legs.");
+	console.log("my name is "+cat1.name+" and if you ask i am happy i must say it is "+cat1.catHasGotJerry);
+
+	var speak=function(){
+		return this.sound+"! My name is "+this.name +"!"	
+	}
+
+var cat2={
+	"legs": 4,
+ "name": "Silvester",
+ "color": "black and white", 
+ "isHappy": false, 
+ "sound": "Meow", 
+ "say": speak 
+};
+document.write("<h1>silvester the cat as object</h>");
+document.write("<br>");
+document.write("<h3>legs= "+cat2.legs+"</h3>");
+document.write("<h3>name= "+cat2.name+"</h3>");
+document.write("<h3>color = " + cat2.color + "</h3>");
+document.write("<h3>is Happy = " + cat2.isHappy + "</h3>");
+document.write("<h3>" + cat2.say() + "</h3>");   
+
+var mouse={
+	"legs": 2,
+ "name": "jerry",
+ "color": "brown", 
+ "isHappy": false, 
+ "sound": "sqick", 
+ "say": speak 
+};
+document.write("<h3>" + mouse.say() + "</h3>"); 
+
+
+var horse={
+	legs: 4,
+ name: "asb",
+ color: "black", 
+ isHappy: false, 
+ sound: "ghooor ghooooor", 
+ say: speak
+};
+document.write("<h3>" + horse.say() + "</h3>"); 
+</script>
+	
+</body>
+</html>
